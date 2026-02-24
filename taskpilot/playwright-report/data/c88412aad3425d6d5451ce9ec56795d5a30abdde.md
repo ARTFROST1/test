@@ -1,0 +1,48 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - link "T TaskPilot" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: T
+        - generic [ref=e7]: TaskPilot
+      - heading "Your AI assistant for business tasks" [level=1] [ref=e8]
+      - paragraph [ref=e9]: Delegate research, content creation, analysis, and more to intelligent AI agents.
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Welcome back
+        - generic [ref=e14]: Log in to your account to continue
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]: fetch failed
+          - generic [ref=e18]:
+            - text: Email
+            - textbox "Email" [ref=e19]:
+              - /placeholder: name@example.com
+          - generic [ref=e20]:
+            - generic [ref=e21]:
+              - generic [ref=e22]: Password
+              - link "Forgot password?" [ref=e23] [cursor=pointer]:
+                - /url: /forgot-password
+            - generic [ref=e24]:
+              - textbox "Password" [ref=e25]:
+                - /placeholder: Enter your password
+              - button [ref=e26]:
+                - img
+          - button "Log In" [ref=e27]
+          - generic [ref=e32]: Or continue with
+          - generic [ref=e33]:
+            - button "Google" [ref=e34]:
+              - img
+              - text: Google
+            - button "GitHub" [ref=e35]:
+              - img
+              - text: GitHub
+        - paragraph [ref=e36]:
+          - text: Don't have an account?
+          - link "Sign up" [ref=e37] [cursor=pointer]:
+            - /url: /signup
+  - alert [ref=e38]
+```

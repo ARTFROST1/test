@@ -1,0 +1,57 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - link "T TaskPilot" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: T
+        - generic [ref=e7]: TaskPilot
+      - heading "Start delegating tasks today" [level=1] [ref=e8]
+      - paragraph [ref=e9]: Create your free account and get 10 tasks per month. No credit card required.
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Create your account
+        - generic [ref=e14]: Get started with your free account
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]:
+            - text: Full Name
+            - textbox "Full Name" [ref=e18]:
+              - /placeholder: John Doe
+          - generic [ref=e19]:
+            - text: Email
+            - textbox "Email" [ref=e20]:
+              - /placeholder: name@example.com
+          - generic [ref=e21]:
+            - text: Password
+            - generic [ref=e22]:
+              - textbox "Password" [ref=e23]:
+                - /placeholder: Create a password
+              - button [ref=e24]:
+                - img
+          - generic [ref=e25]:
+            - checkbox "I agree to the Terms of Service and Privacy Policy" [ref=e26]
+            - generic [ref=e27]:
+              - text: I agree to the
+              - link "Terms of Service" [ref=e28] [cursor=pointer]:
+                - /url: /terms
+              - text: and
+              - link "Privacy Policy" [ref=e29] [cursor=pointer]:
+                - /url: /privacy
+          - button "Create Account" [ref=e30]
+          - generic [ref=e35]: Or continue with
+          - generic [ref=e36]:
+            - button "Google" [ref=e37]:
+              - img
+              - text: Google
+            - button "GitHub" [ref=e38]:
+              - img
+              - text: GitHub
+        - paragraph [ref=e39]:
+          - text: Already have an account?
+          - link "Log in" [ref=e40] [cursor=pointer]:
+            - /url: /login
+  - alert [ref=e41]
+```

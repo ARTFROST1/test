@@ -17,7 +17,14 @@ export type AuthState = {
 /**
  * Sign up with email and password
  */
-export async function signUp(formData: FormData): Promise<AuthState> {
+export async function signUp(formData: FormData): Promise<AuthState>
+export async function signUp(_prevState: AuthState, formData: FormData): Promise<AuthState>
+export async function signUp(
+  arg1: AuthState | FormData,
+  arg2?: FormData
+): Promise<AuthState> {
+  const formData = arg2 ?? (arg1 as FormData)
+
   const email = formData.get('email') as string
   const password = formData.get('password') as string
   const fullName = formData.get('fullName') as string | null
@@ -81,7 +88,14 @@ export async function signUp(formData: FormData): Promise<AuthState> {
 /**
  * Sign in with email and password
  */
-export async function signIn(formData: FormData): Promise<AuthState> {
+export async function signIn(formData: FormData): Promise<AuthState>
+export async function signIn(_prevState: AuthState, formData: FormData): Promise<AuthState>
+export async function signIn(
+  arg1: AuthState | FormData,
+  arg2?: FormData
+): Promise<AuthState> {
+  const formData = arg2 ?? (arg1 as FormData)
+
   const email = formData.get('email') as string
   const password = formData.get('password') as string
 

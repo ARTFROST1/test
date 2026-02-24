@@ -1,0 +1,101 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "T TaskPilot" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: T
+          - generic [ref=e7]: TaskPilot
+        - generic [ref=e8]:
+          - button "Toggle theme" [ref=e9]:
+            - img
+            - generic [ref=e10]: Toggle theme
+          - button "Notifications" [ref=e11]:
+            - img
+            - generic [ref=e12]: Notifications
+    - generic [ref=e13]:
+      - complementary [ref=e14]:
+        - link "New Task" [ref=e16] [cursor=pointer]:
+          - /url: /tasks/new
+          - img
+          - text: New Task
+        - navigation [ref=e17]:
+          - link "Dashboard" [ref=e18] [cursor=pointer]:
+            - /url: /dashboard
+            - img [ref=e19]
+            - text: Dashboard
+          - link "Templates" [ref=e24] [cursor=pointer]:
+            - /url: /templates
+            - img [ref=e25]
+            - text: Templates
+          - link "History" [ref=e27] [cursor=pointer]:
+            - /url: /tasks
+            - img [ref=e28]
+            - text: History
+        - generic [ref=e31]:
+          - link "Settings" [ref=e32] [cursor=pointer]:
+            - /url: /settings
+            - img [ref=e33]
+            - text: Settings
+          - link "Help" [ref=e36] [cursor=pointer]:
+            - /url: /help
+            - img [ref=e37]
+            - text: Help
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: Pro Plan
+            - generic [ref=e44]: 23/50
+          - paragraph [ref=e47]: Tasks this month
+        - generic [ref=e49]:
+          - generic [ref=e50]: U
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: User
+            - paragraph [ref=e53]: Free plan
+          - button [ref=e54]:
+            - img
+      - main [ref=e55]:
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - heading "Settings" [level=1] [ref=e59]
+            - paragraph [ref=e60]: Manage your account settings and preferences
+          - generic [ref=e61]:
+            - link "Profile Update your personal information and avatar" [ref=e62] [cursor=pointer]:
+              - /url: /settings/profile
+              - generic [ref=e65]:
+                - img [ref=e67]
+                - generic [ref=e70]:
+                  - generic [ref=e71]: Profile
+                  - generic [ref=e72]: Update your personal information and avatar
+            - link "Subscription Manage your plan, billing, and usage" [ref=e73] [cursor=pointer]:
+              - /url: /settings/subscription
+              - generic [ref=e76]:
+                - img [ref=e78]
+                - generic [ref=e80]:
+                  - generic [ref=e81]: Subscription
+                  - generic [ref=e82]: Manage your plan, billing, and usage
+            - link "Notifications Configure email and push notifications" [ref=e83] [cursor=pointer]:
+              - /url: /settings/notifications
+              - generic [ref=e86]:
+                - img [ref=e88]
+                - generic [ref=e91]:
+                  - generic [ref=e92]: Notifications
+                  - generic [ref=e93]: Configure email and push notifications
+            - link "Security Password, two-factor authentication, and sessions" [ref=e94] [cursor=pointer]:
+              - /url: /settings/security
+              - generic [ref=e97]:
+                - img [ref=e99]
+                - generic [ref=e101]:
+                  - generic [ref=e102]: Security
+                  - generic [ref=e103]: Password, two-factor authentication, and sessions
+            - link "Appearance Customize theme and display preferences" [ref=e104] [cursor=pointer]:
+              - /url: /settings/appearance
+              - generic [ref=e107]:
+                - img [ref=e109]
+                - generic [ref=e115]:
+                  - generic [ref=e116]: Appearance
+                  - generic [ref=e117]: Customize theme and display preferences
+  - alert [ref=e118]
+```
